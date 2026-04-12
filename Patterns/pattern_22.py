@@ -1,0 +1,7 @@
+n = 4
+
+for i in range(2*n - 1):
+    for j in range(2*n - 1):
+        val = n - min(i, j, 2*n-2-i, 2*n-2-j)
+        print(val, end=" ")
+    print()

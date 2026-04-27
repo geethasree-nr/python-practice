@@ -1,4 +1,4 @@
-nums=[5, 4, 3, 2, 1]
+nums=[1,10,11,5,2]
 for i in range(0,len(nums)):
     for j in range(i+1,len(nums)):
         if nums[i]>nums[j]:

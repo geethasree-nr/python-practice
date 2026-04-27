@@ -1,7 +1,12 @@
 nums=[1,10,11,5,2]
-for i in range(0,len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i]>nums[j]:
-            nums[i],nums[j]=nums[j],nums[i]
-        print(nums)
-    
+while True:
+    a=True
+    for i in range(0,len(nums)-1):
+        if nums[i]>nums[i+1]:
+            nums[i],nums[i+1]=nums[i+1],nums[i]
+            a=False
+    if a==True:
+        break
+
+
+print(nums)
